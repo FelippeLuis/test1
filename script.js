@@ -1,20 +1,18 @@
-let numero = 0
+var numero = 0
 
-function aumentar() {
+function aumentar(){
 
     numero ++
 
     mostrarnatela()
 }
-
-function zerar() {
+function zerar(){
 
     numero -= numero
 
     mostrarnatela()
 }
-
-function diminuir() {
+function diminuir(){
 
     numero --
 
@@ -23,7 +21,8 @@ function diminuir() {
 
 function mostrarnatela() {
 
-    const p = document.querySelector("#resultado")
+const p = document.getElementById('resultado')
 
-    p.innerText = numero
+p.innerText = numero
+
 }
